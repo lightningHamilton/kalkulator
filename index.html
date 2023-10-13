@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Geming</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .calculator {
+      margin: 20px auto;
+      padding: 10px;
+      border: 2px solid #ccc;
+      max-width: 300px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .calculator button {
+      margin: 5px;
+    }
+
+    #layar {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Kalkulator Geming</h1>
+    <div class="calculator">
+      <input type="text" id="layar" class="form-control" disabled>
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(1)">1</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(2)">2</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(3)">3</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-warning btn-block" onclick="doTeknik('+')">+</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(4)">4</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(5)">5</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(6)">6</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-warning btn-block" onclick="doTeknik('-')">-</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(7)">7</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(8)">8</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(9)">9</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-warning btn-block" onclick="doTeknik('*')">X</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-danger btn-block" onclick="hapus()">C</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary btn-block" onclick="inputAngka(0)">0</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-success btn-block" onclick="hitungHasil()">=</button>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-warning btn-block" onclick="doTeknik('/')">/</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
